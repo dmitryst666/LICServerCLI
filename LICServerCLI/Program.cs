@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,12 @@ namespace LICServerCLI
     {
         static void Main(string[] args)
         {
+            Logger logger = LogManager.GetCurrentClassLogger();
+            int maxConn = 10;
+            logger.Trace("--------------------------------------------------------------  New Instance started...");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Starting up...");
+            Console.WriteLine("New instance is starting up....");
+            Console.ResetColor();
             Console.ReadLine();
         }
     }
