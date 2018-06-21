@@ -10,6 +10,9 @@ namespace LICServerCLI
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Starting up...");
+            Console.ReadLine();
         }
     }
 }
